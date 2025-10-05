@@ -32,6 +32,9 @@ yarn-error.*
 
 # evn files
 .env
+.env.local
+.env.development
+.env.production
 
 # local env files
 .env*.local
