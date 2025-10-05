@@ -8,7 +8,7 @@ export default function HomeScreen() {
 
   return (
     <View style={globalStyles.container}>
-      <Text >Check in timeeeeee</Text>
+      <Text >Check in</Text>
       <StatusBar style="auto" />
     </View>
   );
