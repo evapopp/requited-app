@@ -3,22 +3,22 @@
 // import  { supabase } from "../../lib/supabase"
 
 // export default function LoginScreen() {
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
+//   const [email, setEmail] = useState("")
+//   const [password, setPassword] = useState("")
 
 //   async function handleLogin() {
 //     const { error } = await supabase.auth.signInWithPassword({
 //       email,
 //       password,
-//     });
-//     if (error) Alert.alert("Login error", error.message);
-//     else Alert.alert("Success", "You are logged in!");
+//     })
+//     if (error) Alert.alert("Login error", error.message)
+//     else Alert.alert("Success", "You are logged in!")
 //   }
 
 //   async function handleSignup() {
-//     const { error } = await supabase.auth.signUp({ email, password });
-//     if (error) Alert.alert("Signup error", error.message);
-//     else Alert.alert("Check your email for confirmation!");
+//     const { error } = await supabase.auth.signUp({ email, password })
+//     if (error) Alert.alert("Signup error", error.message)
+//     else Alert.alert("Check your email for confirmation!")
 //   }
 
 //   return (
@@ -44,7 +44,7 @@
 //       <Button title="Log In" onPress={handleLogin} />
 //       <Button title="Sign Up" onPress={handleSignup} />
 //     </View>
-//   );
+//   )
 // }
 
 import { supabase } from "../../lib/supabase";
@@ -52,16 +52,17 @@ import { View, Text, Button } from "react-native";
 import { useState } from "react";
 
 export default function TestSupabase() {
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState("")
+
 
   async function testInsert() {
     const { data, error } = await supabase.from("user").insert({
       name: "Test User",
       email: "test@example.com",
-    });
+    })
 
-    if (error) setResult(error.message);
-    else setResult("✅ Insert successful!");
+    if (error) setResult(error.message)
+    else setResult("✅ Insert successful!")
   }
 
   return (
@@ -69,5 +70,5 @@ export default function TestSupabase() {
       <Button title="Test Supabase Insert" onPress={testInsert} />
       <Text>{result}</Text>
     </View>
-  );
+  )
 }
