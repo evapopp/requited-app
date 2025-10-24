@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
-import useGlobalStyles from '../styles/UseGlobalStyles';
+import useGlobalStyles from '../../styles/UseGlobalStyles';
 import React from 'react';
 
 export default function HomeScreen() {

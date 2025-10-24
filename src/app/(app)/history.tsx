@@ -1,7 +1,6 @@
 import { View, Text } from "react-native";
 import { StatusBar } from 'expo-status-bar';
-import useGlobalStyles from "../styles/UseGlobalStyles";
-
+import useGlobalStyles from "../../styles/UseGlobalStyles";
 export default function HistoryScreen() {
   const globalStyles = useGlobalStyles()
 
