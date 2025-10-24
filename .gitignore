@@ -30,6 +30,12 @@ yarn-error.*
 .DS_Store
 *.pem
 
+# evn files
+.env
+.env.local
+.env.development
+.env.production
+
 # local env files
 .env*.local
 
@@ -39,3 +45,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+#misc
+sandbox.tsx

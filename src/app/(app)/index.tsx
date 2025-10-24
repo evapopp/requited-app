@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
-import useGlobalStyles from '../styles/UseGlobalStyles';
+import useGlobalStyles from '../../styles/UseGlobalStyles';
 import React from 'react';
 
 export default function HomeScreen() {
@@ -8,7 +8,7 @@ export default function HomeScreen() {
 
   return (
     <View style={globalStyles.container}>
-      <Text >Check in timeeeeee</Text>
+      <Text >Check in</Text>
       <StatusBar style="auto" />
     </View>
   );
